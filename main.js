@@ -29,6 +29,7 @@ class Timer {
     }
 
     stop() {
+        document.querySelector('.root-timer').classList.add('time-out')
         clearInterval(this.interval)
     }
 
@@ -42,5 +43,5 @@ class Timer {
 
 const Time = new Timer(
     document.querySelector('.root-timer'),
-    2
+    5
 );
